@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Job>
+  <Title>RGB LED Control Program</Title>
+  <Description>Flowchart for controlling RGB LED</Description>
+  <Shapes>
+    <Shape>
+      <Name>Start</Name>
+      <Type>Start</Type>
+      <Position x="1" y="1"/>
+    </Shape>
+    <Shape>
+      <Name>Initialize LEDs</Name>
+      <Type>Process</Type>
+      <Position x="2" y="1"/>
+    </Shape>
+    <Shape>
+      <Name>Check Input</Name>
+      <Type>Decision</Type>
+      <Position x="2" y="2"/>
+    </Shape>
+    <Shape>
+      <Name>Set Color</Name>
+      <Type>Process</Type>
+      <Position x="3" y="2"/>
+    </Shape>
+    <Shape>
+      <Name>Display Color</Name>
+      <Type>Process</Type>
+      <Position x="4" y="2"/>
+    </Shape>
+    <Shape>
+      <Name>End</Name>
+      <Type>End</Type>
+      <Position x="5" y="2"/>
+    </Shape>
+  </Shapes>
+  <Connections>
+    <Connection from="Start" to="Initialize LEDs"/>
+    <Connection from="Initialize LEDs" to="Check Input"/>
+    <Connection from="Check Input" to="Set Color"/>
+    <Connection from="Set Color" to="Display Color"/>
+    <Connection from="Display Color" to="End"/>
+  </Connections>
+</Job>
